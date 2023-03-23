@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 3.22.1 FATAL_ERROR)
-project(solver)
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../formatter_ex_lib formtr_ex)
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../solver_lib slver)
-add_executable(solver ${CMAKE_CURRENT_SOURCE_DIR}/equation.cpp)
-target_link_libraries(solver formatter_ex_lib solver_lib)
