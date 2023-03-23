@@ -1,0 +1,12 @@
+# ninja log v5
+3	112	7000701880219283	build.ninja	f8c8ce39e5a8ad80
+336	463	7000651527340393	hello_world.exe	4c508caa14b75d30
+11	234	7000651342020996	formatter_ex_lib/formatter/CMakeFiles/formatter.dir/formatter.cpp.obj	6baa9da49c75006
+8	71	7000651523453567	formatter_ex_lib/formatter/libformatter.a	b893ca9f5f4db48f
+3	282	7000651342499525	CMakeFiles/hello_world.dir/hello_world_application/hello_world.cpp.obj	b281308c23e3531c
+281	335	7000651526100124	formatter_ex_lib/libformatter_ex.a	eef83fa68d967839
+2	281	7000651525543470	formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.obj	38ae3d11e25e348f
+3	287	7000701971041809	CMakeFiles/solver.dir/solver_application/equation.cpp.obj	564aefe5d2a3ee55
+3	236	7000702106881142	solver_lib/CMakeFiles/solver_lib.dir/solver.cpp.obj	3953eb387494d72
+236	300	7000702107525691	solver_lib/libsolver_lib.a	b6442c044c7e766c
+300	397	7000702108463216	solver.exe	c4c8ea9b8ee392e5
