@@ -1,12 +1,9 @@
-cmake_minimum_required(VERSION 3.23)
-project(hello_world_application)
+cmake_minimum_required(VERSION 3.22.1 FATAL_ERROR)
 
-set(CMAKE_CXX_STANDARD 14)
-
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/formatter_ex_lib)
-
-add_subdirectory(formatter_ex_lib)
-
-add_executable(hello_world_application hello_world.cpp)
-
-target_link_libraries(hello_world_application formatter_ex)
+project(hello_world)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../formatter_ex_lib formatter_ex)
+add_executable(hello_world ${CMAKE_CURRENT_SOURCE_DIR}/src/hello_world.cpp)
+target_include_directories(hello_world PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../formatter_ex_lib/src)
+target_link_libraries(hello_world formatter_ex_lib)
